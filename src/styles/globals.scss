@@ -1,0 +1,14 @@
+@use 'variables' as vars;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: vars.$lightBlue;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  background-color: vars.$darkBlue;
+}
