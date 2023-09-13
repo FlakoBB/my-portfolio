@@ -1,0 +1,69 @@
+@use 'variables' as vars;
+@use 'mixins' as mixin;
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100dvh;
+
+  video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    @include mixin.flex_center;
+    gap: 6rem;
+    position: relative;
+    height: 100%;
+    background-color: rgba(vars.$darkBlue, .2);
+    backdrop-filter: blur(30px);
+    z-index: 1;
+
+    .photo {
+      flex-shrink: 0;
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      background-color: rgba(vars.$blue, .4);
+      backdrop-filter: blur(30px);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .information {
+      @include mixin.flex_center;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+      max-width: 42rem;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-wrap: balance;
+      }
+    }
+
+    button {
+      @include mixin.gen_button;
+    }
+  }
+}
