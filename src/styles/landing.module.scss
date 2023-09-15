@@ -30,6 +30,7 @@
       background-color: rgba(vars.$blue, .4);
       backdrop-filter: blur(30px);
       overflow: hidden;
+      box-shadow: 0 0 10px 1px vars.$lightBlue;
 
       img {
         width: 100%;
@@ -60,10 +61,24 @@
         font-weight: 400;
         text-wrap: balance;
       }
-    }
 
-    button {
-      @include mixin.gen_button;
+      .btns_container {
+        width: 100%;
+        @include mixin.flex_center;
+        justify-content: space-between;
+
+        button {
+          @include mixin.gen_button;
+  
+          &.btn_github {
+            @include mixin.black_button;
+          }
+  
+          &.btn_blue {
+            @include mixin.blue_button;
+          }
+        }
+      }
     }
   }
 }

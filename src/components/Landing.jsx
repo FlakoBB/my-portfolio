@@ -16,10 +16,10 @@ const Landing = () => {
             <h2>Desarrollador Front End</h2>
           </div>
           <p>Poseo experiencia en la creación de páginas web con diseño adaptable, priorizando el desarrollo de aplicaciones de una sola página (SPA) mediante la librería React. Destaco por mi habilidad en la creación de componentes reutilizables y tengo un enfoque particular en la implementación eficiente de Next.js como framework.</p>
-          <div>
-            <button>Boton</button>
-            <button>Boton</button>
-            <button>Boton</button>
+          <div className={styles.btns_container}>
+            <button className={styles.btn_blue}>LinkedIn</button>
+            <button className={styles.btn_github}>GitHub</button>
+            <button className={styles.btn_blue}>Curriculum</button>
           </div>
         </article>
       </div>

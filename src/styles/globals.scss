@@ -12,3 +12,19 @@ body {
   min-height: 100dvh;
   background-color: vars.$darkBlue;
 }
+
+::-webkit-scrollbar {
+  display: none;
+  width: .6rem;
+  background-color: vars.$lightBlue;
+  border-radius: .3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(vars.$blue, .8);
+  border-radius: .3rem;
+
+  &:hover {
+    background-color: vars.$blue;
+  }
+}

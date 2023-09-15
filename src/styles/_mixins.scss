@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 @mixin flex_center {
   display: flex;
   align-items: center;
@@ -6,7 +8,25 @@
 
 @mixin gen_button {
   width: 8rem;
-  height: 2rem;
+  padding: .6rem;
   border-radius: 1.5rem;
-  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: 0 0 10px 1px vars.$lightBlue;
+  }
+}
+
+@mixin blue_button {
+  background-color: vars.$blue;
+  color: vars.$lightBlue;
+}
+
+@mixin black_button {
+  background-color: vars.$black;
+  color: vars.$lightBlue;
 }
