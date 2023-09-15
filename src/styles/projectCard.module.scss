@@ -1,0 +1,79 @@
+@use 'mixins' as mixin;
+@use 'variables' as vars;
+
+.card {
+  min-width: 17rem;
+  height: fit-content;
+  padding: .8rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px 4px vars.$lightBlue;
+  }
+
+  .image {
+    border-radius: .6rem;
+    overflow: hidden;
+    aspect-ratio: 100 / 66;
+    width: 100%;
+    height: auto;
+    margin-bottom: .8rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .stack_container {
+    @include mixin.flex_center;
+    justify-content: space-between;
+    gap: .8rem;
+    margin-block: .8rem;
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    ul {
+      @include mixin.flex_center;
+      flex-wrap: wrap;
+      gap: .8rem;
+
+      li {
+        list-style: none;
+        font-size: .9rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .btns_container {
+    @include mixin.flex_center;
+    justify-content: space-between;
+
+    button {
+      @include mixin.gen_button;
+      width: 6rem;
+      font-size: .9rem;
+
+      &.repo {
+        @include mixin.black_button;
+      }
+
+      &.demo {
+        @include mixin.blue_button;
+      }
+    }
+  }
+}
