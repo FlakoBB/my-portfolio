@@ -12,7 +12,6 @@ const ProjectCard = ({ project }) => {
       <div className={styles.stack_container}>
         <span>Stack:</span>
         <ul>
-          {/* // ToDo: Hacer un mapeo de la lista de tecnologias usadas en el proyecto */}
           {
             project.stack.map((tec, index) => <li key={index}>{tec}</li>)
           }

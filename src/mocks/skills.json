@@ -1,0 +1,48 @@
+{
+  "skills": [
+    {
+      "name": "JavaScript",
+      "logo": "/assets/images/logos/javascript_logo.svg"
+    },
+    {
+      "name": "HTML",
+      "logo": "/assets/images/logos/html_logo.svg"
+    },
+    {
+      "name": "CSS",
+      "logo": "/assets/images/logos/css_logo.svg"
+    },
+    {
+      "name": "SCSS",
+      "logo": "/assets/images/logos/sass_logo.svg"
+    },
+    {
+      "name": "React",
+      "logo": "/assets/images/logos/react_logo.svg"
+    },
+    {
+      "name": "Next.js",
+      "logo": "/assets/images/logos/nextjs_logo.svg"
+    },
+    {
+      "name": "Git / GitHub",
+      "logo": "/assets/images/logos/github_logo.svg"
+    },
+    {
+      "name": "Webpack",
+      "logo": "/assets/images/logos/webpack_logo.svg"
+    },
+    {
+      "name": "MySQL",
+      "logo": "/assets/images/logos/mysql_logo.svg"
+    },
+    {
+      "name": "Java",
+      "logo": "/assets/images/logos/java_logo.svg"
+    },
+    {
+      "name": "Python",
+      "logo": "/assets/images/logos/python_logo.svg"
+    }
+  ]
+}
