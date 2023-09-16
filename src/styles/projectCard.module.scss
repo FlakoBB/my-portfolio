@@ -29,7 +29,7 @@
   }
 
   .name {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -41,12 +41,15 @@
     margin-block: .8rem;
 
     span {
+      flex-shrink: 0;
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 600;
     }
 
     ul {
+      flex-grow: 1;
       @include mixin.flex_center;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: .8rem;
 

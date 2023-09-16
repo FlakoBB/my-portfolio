@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "name": "Windbnb - Airbnb Clone",
+      "image": "https://github.com/FlakoBB/windbnb/raw/main/public/screenshot.png",
+      "stack": [
+        "React",
+        "CSS",
+        "Next.js"
+      ],
+      "demo": "https://windbnb-flakobb.vercel.app/",
+      "repo": "https://github.com/FlakoBB/windbnb"
+    },
+    {
+      "name": "Todo app",
+      "image": "https://github.com/FlakoBB/todo-app/raw/main/public/screenshot.png",
+      "stack": [
+        "React",
+        "SCSS",
+        "Next.js",
+        "JavaScript"
+      ],
+      "demo": "https://todo-app-flakobb.vercel.app/",
+      "repo": "https://github.com/FlakoBB/todo-app"
+    },
+    {
+      "name": "Reusable components",
+      "image": "https://github.com/FlakoBB/reusable-components/raw/main/public/screenshot1.png",
+      "stack": [
+        "React",
+        "CSS",
+        "JavaScript",
+        "Webpack"
+      ],
+      "demo": "https://reusable-components-flakobb.vercel.app/",
+      "repo": "https://github.com/FlakoBB/reusable-components"
+    }
+  ]
+}
