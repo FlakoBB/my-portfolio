@@ -34,6 +34,49 @@
       ],
       "demo": "https://reusable-components-flakobb.vercel.app/",
       "repo": "https://github.com/FlakoBB/reusable-components"
+    },
+    {
+      "name": "Reloj Digital",
+      "image": "https://github.com/FlakoBB/reloj-digital/raw/main/assets/images/captura.png",
+      "stack": [
+        "CSS",
+        "JavaScript",
+        "HTML"
+      ],
+      "demo": "https://flakobb.github.io/reloj-digital/",
+      "repo": "https://github.com/FlakoBB/reloj-digital"
+    },
+    {
+      "name": "Recipe Blog",
+      "image": "https://github.com/FlakoBB/recipe-blog/raw/main/assets/images/screenshot.png",
+      "stack": [
+        "CSS",
+        "HTML"
+      ],
+      "demo": "https://flakobb.github.io/recipe-blog/",
+      "repo": "https://github.com/FlakoBB/recipe-blog"
+    },
+    {
+      "name": "Checkout page",
+      "image": "https://github.com/FlakoBB/checkout-page/raw/main/images/screenshot.png",
+      "stack": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "demo": "https://flakobb.github.io/checkout-page/",
+      "repo": "https://github.com/FlakoBB/checkout-page"
+    },
+    {
+      "name": "Interior consultant",
+      "image": "https://github.com/FlakoBB/interior-consultant/raw/main/images/screenshot.png",
+      "stack": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "demo": "https://flakobb.github.io/interior-consultant/",
+      "repo": "https://github.com/FlakoBB/interior-consultant"
     }
   ]
 }

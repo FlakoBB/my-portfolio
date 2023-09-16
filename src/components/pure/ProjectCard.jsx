@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '@styles/projectCard.module.scss'
+import Link from 'next/link'
 
 const ProjectCard = ({ project }) => {
   return (
@@ -18,8 +19,12 @@ const ProjectCard = ({ project }) => {
         </ul>
       </div>
       <div className={styles.btns_container}>
-        <button className={styles.repo}>Repo</button>
-        <button className={styles.demo}>Demo</button>
+        <Link href={project.repo} target='_blank' rel='noreferrer'>
+          <button className={styles.repo}>Repo</button>
+        </Link>
+        <Link href={project.demo} target='_blank' rel='noreferrer'>
+          <button className={styles.demo}>Demo</button>
+        </Link>
       </div>
     </article>
   )
