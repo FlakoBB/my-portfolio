@@ -11,6 +11,7 @@ html,
 body {
   min-height: 100dvh;
   background-color: vars.$darkBlue;
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -26,5 +27,12 @@ body {
 
   &:hover {
     background-color: vars.$blue;
+  }
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    font-size: 14px;
   }
 }
