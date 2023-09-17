@@ -4,6 +4,7 @@ import ProjectsContainer from '@pureComp/ProjectsContainer'
 import Projects from '@/mocks/projects.json'
 import Skills from '@/mocks/skills.json'
 import SkillsContainer from '@components/SkillsContainer'
+import Footer from '@components/Footer'
 
 export default function Home () {
   return (
@@ -15,6 +16,7 @@ export default function Home () {
       <Section title='habilidades'>
         <SkillsContainer skills={Skills.skills} />
       </Section>
+      <Footer />
     </>
   )
 }
