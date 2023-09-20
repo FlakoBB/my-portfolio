@@ -46,18 +46,58 @@
         @include mixin.flex_center;
         width: 16rem;
         flex-direction: column;
+        gap: 1.5rem;
 
         .name_list {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           font-weight: 600;
+        }
+
+        nav {
+          @include mixin.flex_center;
+          flex-direction: column;
+          align-items: stretch;
+          gap: .4rem;
+          width: 100%;
+
+          .link {
+            @include mixin.flex_center;
+            gap: 1rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: .6rem;
+            padding: .6rem;
+
+            &:hover {
+              background-color: rgba(vars.$blue, .4);
+            }
+  
+            svg {
+              height: 1.4rem;
+              width: auto;
+              fill: vars.$lightBlue;
+            }
+          }
         }
       }
     }
     
     .attibution {
+      @include mixin.flex_center;
+      gap: .5rem;
       margin-top: 1.4rem;
-      font-size: .9rem;
+      font-size: 1rem;
       text-align: center;
+
+      span {
+        font-weight: 700;
+      }
+
+      svg {
+        height: 1em;
+        width: auto;
+        fill: vars.$lightBlue;
+      }
     }
   }
 }

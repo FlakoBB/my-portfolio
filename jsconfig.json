@@ -4,7 +4,8 @@
       "@/*": ["./src/*"],
       "@styles/*": ["./src/styles/*"],
       "@components/*": ["./src/components/*"],
-      "@pureComp/*": ["./src/components/pure/*"]
+      "@pureComp/*": ["./src/components/pure/*"],
+      "@svgIcons": ["./src/components/icons/svgIcons.jsx"]
     }
   }
 }
