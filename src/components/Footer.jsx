@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import BackgrounVideo from '@pureComp/BackgrounVideo'
 import styles from '@styles/footer.module.scss'
-import { CircleCIcon, EnvelopeIcon, GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon, XIcon, YoutubeIcon } from '@svgIcons'
+import { CircleCIcon, GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon, XIcon, YoutubeIcon } from '@svgIcons'
+import EmailForm from './forms/EmailForm'
 
 const Footer = () => {
   return (
@@ -12,43 +12,34 @@ const Footer = () => {
         <h6 className={styles.title}>Contacto</h6>
         <section className={styles.content}>
           <article className={styles.list}>
-            <p className={styles.name_list}>Escribeme:</p>
-            <nav>
-              <Link className={styles.link} href='mailto:bbjosephryan@gmail.com' target='_blank' rel='noreferrer'>
-                E-mail
-                <EnvelopeIcon />
-              </Link>
-              <Link className={styles.link} href='https://bit.ly/injrbb' target='_blank' rel='noreferrer'>
-                LinkedIn
-                <LinkedinIcon />
-              </Link>
-            </nav>
+            <EmailForm />
           </article>
-          <figure className={styles.logo}>
-            <Image src='/assets/images/main-logo.png' alt='Mi logo' width='300' height='300' />
-          </figure>
           <article className={styles.list}>
             <p className={styles.name_list}>Sigueme:</p>
             <nav>
+              <Link className={styles.link} href='https://bit.ly/injrbb' target='_blank' rel='noreferrer'>
+                <LinkedinIcon />
+                Joseph Ryan
+              </Link>
               <Link className={styles.link} href='https://bit.ly/3Uchfhr' target='_blank' rel='noreferrer'>
-                @FlakoBB
                 <GithubIcon />
+                @FlakoBB
               </Link>
               <Link className={styles.link} href='https://bit.ly/3FPXCHR' target='_blank' rel='noreferrer'>
-                @Joseph_RBB
                 <XIcon />
+                @Joseph_RBB
               </Link>
               <Link className={styles.link} href='https://bit.ly/3Uf0KkW' target='_blank' rel='noreferrer'>
-                @flako_jrbb
                 <InstagramIcon />
+                @flako_jrbb
               </Link>
               <Link className={styles.link} href='https://bit.ly/3YbKKm9' target='_blank' rel='noreferrer'>
-                @flakobb
                 <YoutubeIcon />
+                @flakobb
               </Link>
               <Link className={styles.link} href='https://spoti.fi/356UZ4j' target='_blank' rel='noreferrer'>
-                FlakoBB
                 <SpotifyIcon />
+                FlakoBB
               </Link>
             </nav>
           </article>
