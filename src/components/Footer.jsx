@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import BackgrounVideo from '@pureComp/BackgrounVideo'
 import styles from '@styles/footer.module.scss'
-import { CircleCIcon, GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon, XIcon, YoutubeIcon } from '@svgIcons'
+import { GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon, XIcon, YoutubeIcon } from '@svgIcons'
 import EmailForm from './forms/EmailForm'
 
 const Footer = () => {
@@ -44,7 +44,6 @@ const Footer = () => {
             </nav>
           </article>
         </section>
-        <p className={styles.attibution}>Creado por <span>FlakoBB</span> - 2023 <CircleCIcon /></p>
       </div>
     </footer>
   )
