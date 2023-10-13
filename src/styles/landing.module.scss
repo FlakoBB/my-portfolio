@@ -123,6 +123,7 @@
       .information {
         .btns_container {
           flex-direction: column;
+          align-items: stretch;
 
           button {
             width: 100%;
