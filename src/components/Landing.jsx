@@ -25,6 +25,7 @@ const Landing = () => {
               <button className={styles.btn_github}>GitHub</button>
             </Link>
             <button className={styles.btn_blue}>Curriculum</button>
+            {/* // ToDo: make a page to show and download CV */}
           </div>
         </article>
       </div>
