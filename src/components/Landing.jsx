@@ -24,8 +24,9 @@ const Landing = () => {
             <Link href='https://bit.ly/3Uchfhr' target='_blank' rel='noreferrer'>
               <button className={styles.btn_github}>GitHub</button>
             </Link>
-            <button className={styles.btn_blue}>Curriculum</button>
-            {/* // ToDo: make a page to show and download CV */}
+            <a href='/assets/docs/JosephRyanBarreraBaeza_CV.pdf' download='JosephRyanBarreraBaeza_CV'>
+              <button className={styles.btn_blue}>Curriculum</button>
+            </a>
           </div>
         </article>
       </div>
