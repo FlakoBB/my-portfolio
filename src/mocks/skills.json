@@ -37,12 +37,12 @@
       "logo": "/assets/images/logos/mysql_logo.svg"
     },
     {
-      "name": "Java",
-      "logo": "/assets/images/logos/java_logo.svg"
-    },
-    {
       "name": "Python",
       "logo": "/assets/images/logos/python_logo.svg"
+    },
+    {
+      "name": "Django",
+      "logo": "/assets/images/logos/django_logo.svg"
     }
   ]
 }

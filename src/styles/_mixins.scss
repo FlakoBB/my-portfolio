@@ -30,3 +30,46 @@
   background-color: vars.$black;
   color: vars.$lightBlue;
 }
+
+@mixin dynamic_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  padding: .5rem;
+  overflow: hidden;
+  transition: width .4s ease,
+              box-shadow .4s ease;
+
+  svg {
+    height: 100%;
+    width: auto;
+    fill: vars.$lightBlue;
+    transition: transform .4s ease;
+  }
+  
+  span {
+    position: absolute;
+    transform: translateY(4rem);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: transform .4s ease;
+  }
+
+  &:hover {
+    width: 8rem;
+    box-shadow: 0 0 10px 1px vars.$lightBlue;
+
+    svg {
+      transform: translateY(-4rem);
+    }
+
+    span {
+      transform: translateY(0)
+    }
+  }
+}
