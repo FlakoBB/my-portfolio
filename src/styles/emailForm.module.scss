@@ -89,7 +89,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(vars.$blue, .4);
+      box-shadow: 0 0 10px 1px vars.$lightBlue;
     }
   }
 }

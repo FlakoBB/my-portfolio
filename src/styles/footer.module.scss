@@ -47,26 +47,16 @@
 
         nav {
           @include mixin.flex_center;
-          flex-wrap: wrap;
+          flex-direction: column;
           gap: .8rem;
           width: 100%;
-
-          .link {
+          
+          div {
             @include mixin.flex_center;
-            gap: .4rem;
-            text-decoration: none;
-            font-size: 1.3rem;
-            border-radius: .6rem;
-            padding: .6rem;
+            gap: 2rem;
 
-            &:hover {
-              background-color: rgba(vars.$blue, .4);
-            }
-  
-            svg {
-              height: 1.4rem;
-              width: auto;
-              fill: vars.$lightBlue;
+            .btn_link {
+              @include mixin.dynamic_button;
             }
           }
         }

@@ -2,6 +2,7 @@ import BackgroundVideo from '@pureComp/BackgrounVideo'
 import styles from '@styles/landing.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { GithubIcon, LinkedinIcon, UserFileIcon } from './icons/svgIcons'
 
 const Landing = () => {
   return (
@@ -14,18 +15,21 @@ const Landing = () => {
         <article className={styles.information}>
           <div>
             <h1>Joseph Ryan Barrera Baeza</h1>
-            <h2>Desarrollador Front End</h2>
+            <h2>Desarrollador Web</h2>
           </div>
-          <p>Poseo experiencia en la creación de páginas web con diseño adaptable, priorizando el desarrollo de aplicaciones de una sola página (SPA) mediante la librería React. Destaco por mi habilidad en la creación de componentes reutilizables y tengo un enfoque particular en la implementación eficiente de Next.js como framework.</p>
+          <p><span>+2</span> años desarrollando páginas web responsive. <br /> Destacando en la creación de aplicaciones de una sola página (SPA), utilizando la librería React.js y su framework Next.js.</p>
           <div className={styles.btns_container}>
-            <Link href='https://bit.ly/injrbb' target='_blank' rel='noreferrer'>
-              <button className={styles.btn_blue}>LinkedIn</button>
+            <Link className={styles.btn_link} href='https://bit.ly/3Uchfhr' target='_blank' rel='noreferrer'>
+              <GithubIcon />
+              <span>GitHub</span>
             </Link>
-            <Link href='https://bit.ly/3Uchfhr' target='_blank' rel='noreferrer'>
-              <button className={styles.btn_github}>GitHub</button>
+            <Link className={styles.btn_link} href='https://bit.ly/injrbb' target='_blank' rel='noreferrer'>
+              <LinkedinIcon />
+              <span>LinkedIn</span>
             </Link>
-            <a href='/assets/docs/JosephRyanBarreraBaeza_CV.pdf' download='JosephRyanBarreraBaeza_CV'>
-              <button className={styles.btn_blue}>Curriculum</button>
+            <a className={styles.btn_link} href='/assets/docs/JosephRyanBarreraBaeza_CV.pdf' download='JosephRyanBarreraBaeza_CV'>
+              <UserFileIcon />
+              <span>Curriculum</span>
             </a>
           </div>
         </article>
