@@ -1,4 +1,4 @@
-import BackgroundVideo from '@pureComp/BackgrounVideo'
+// import BackgroundVideo from '@pureComp/BackgrounVideo'
 import styles from '@styles/landing.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +7,7 @@ import { GithubIcon, LinkedinIcon, UserFileIcon } from './icons/svgIcons'
 const Landing = () => {
   return (
     <section className={styles.container}>
-      <BackgroundVideo />
+      {/* <BackgroundVideo /> */}
       <div className={styles.content}>
         <figure className={styles.photo}>
           <Image src='/assets/images/profile.png' alt='Profile photo' width='500' height='500' />

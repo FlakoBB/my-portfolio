@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import BackgrounVideo from '@pureComp/BackgrounVideo'
+// import BackgrounVideo from '@pureComp/BackgrounVideo'
 import styles from '@styles/footer.module.scss'
 import { GithubIcon, InstagramIcon, LinkedinIcon, SpotifyIcon, XIcon, YoutubeIcon } from '@svgIcons'
 import EmailForm from './forms/EmailForm'
@@ -7,7 +7,7 @@ import EmailForm from './forms/EmailForm'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <BackgrounVideo />
+      {/* <BackgrounVideo /> */}
       <div className={styles.blur}>
         <h6 className={styles.title}>Contacto</h6>
         <section className={styles.content}>
